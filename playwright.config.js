@@ -8,6 +8,7 @@ module.exports = defineConfig({
   retries: process.env.CI ? 2 : 0,
   reporter: 'html',
   use: {
+    baseURL: 'http://localhost:5173',
     trace: 'on-first-retry',
   },
   projects: [
@@ -18,11 +19,10 @@ module.exports = defineConfig({
       use: { ...devices['Desktop Chrome'], channel: 'chrome' },
     },
   ],
-  // Once the React app has a dev server (e.g. Vite), uncomment this so
-  // Playwright starts it before the tests and set baseURL above.
-  // webServer: {
-  //   command: 'npm run dev',
-  //   url: 'http://localhost:5173',
-  //   reuseExistingServer: !process.env.CI,
-  // },
+  // Start the Vite dev server before the tests (or reuse one already running).
+  webServer: {
+    command: 'npm run dev',
+    url: 'http://localhost:5173',
+    reuseExistingServer: !process.env.CI,
+  },
 });

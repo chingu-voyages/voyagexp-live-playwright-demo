@@ -1,5 +1,5 @@
-# voyage-project-learning-path-gen
-Voyage Project - Learning Path Generator
+# voyagexp-live-playwright-demo
+VoyageXP Live - Playwright Demo App
 
 ## Table of Contents
 
