@@ -1,0 +1,28 @@
+{
+  "name": "voyagexp-live-playwright-demo",
+  "version": "1.0.0",
+  "description": "VoyageXP Live - Playwright Demo App",
+  "keywords": [
+    "React",
+    "Playwright"
+  ],
+  "homepage": "https://github.com/chingu-voyages/voyagexp-live-playwright-demo#readme",
+  "bugs": {
+    "url": "https://github.com/chingu-voyages/voyagexp-live-playwright-demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chingu-voyages/voyagexp-live-playwright-demo.git"
+  },
+  "author": "Jim D. Medlock",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}
