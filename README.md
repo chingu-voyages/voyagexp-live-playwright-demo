@@ -36,8 +36,9 @@ command `npm run test:report`. This command is also defined in the
 
 ## Stretch Goals
 
-Be bold. You can't damage anything since this is a cloned repo and you
-can always delete and re-clone it.
+Be bold, explore Playwright, and don't be afraid to make mistakes. They are
+great learning tools and you can't damage anything since this is a cloned repo
+--- you can always delete and re-clone it.
 
 ## Acknowledgements
 
