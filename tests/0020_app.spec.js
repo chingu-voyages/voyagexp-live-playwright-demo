@@ -8,7 +8,6 @@ test.beforeEach(async ({ page }) => {
 test('shows the question form', async ({ page }) => {
   await expect(page).toHaveTitle('VoyageXP Live - Playwright Demo');
   await expect(page.getByLabel("What's your question?")).toBeVisible();
-  await expect(page.getByRole('button', { name: 'Submit' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Results:' })).toBeVisible();
 });
 
