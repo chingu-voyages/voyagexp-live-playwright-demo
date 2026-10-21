@@ -40,7 +40,7 @@ const Prompt = () => {
 
     // Execute the query
     const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY)
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" })
+    const model = genAI.getGenerativeModel({ model: "gemini-3.5-flash-lite" })
     const result = await model.generateContent(contextInfo.concat(' ',formJson.aiPrompt))
     setAiAnswer(result.response.text())
   }
@@ -56,7 +56,7 @@ const Prompt = () => {
         <hr />        
       </form>
       <h1>Results:</h1>
-      {aiAnswer !== '' && <p>{ aiAnswer }</p>}
+      {aiAnswer !== '' && <p id="prompt-result">{ aiAnswer }</p>}
       <hr />
     </div>
   )
