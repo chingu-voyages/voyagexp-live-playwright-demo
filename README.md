@@ -25,13 +25,18 @@ and running tests on a very simple application.
 git clone https://github.com/chingu-voyages/voyagexp-live-playwright-demo
 ```
 
-2. Add any tests you create in the `/tests` directory. Their file names should
+2. Build the application
+```
+npm i
+```
+
+3. Add any tests you create in the `/tests` directory. Their file names should
 be suffixed with `.spec.js`
 
-3. You can run tests with the command, `npm run test`, which is defined
+4. You can run tests with the command, `npm run test`, which is defined
 in `package.json`.
 
-4. To review the output of the tests, including any you have added, use the
+5. To review the output of the tests, including any you have added, use the
 command `npm run test:report`. This command is also defined in the
 `package.json` file.
 
