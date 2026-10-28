@@ -25,7 +25,8 @@ and running tests on a very simple application.
 git clone https://github.com/chingu-voyages/voyagexp-live-playwright-demo
 ```
 
-2. Add any tests you create in the `/tests` directory
+2. Add any tests you create in the `/tests` directory. Their file names should
+be suffixed with `.spec.js`
 
 3. You can run tests with the command, `npm run test`, which is defined
 in `package.json`.
